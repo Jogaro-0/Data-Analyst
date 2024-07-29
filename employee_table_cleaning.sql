@@ -215,5 +215,4 @@ FROM enterprise_cleaning;
 -- Select the columns we want to use for our data analysis and export them
 
 SELECT employee_ID, name, last_name, area, salary, gender, age, type, finish_time, email FROM enterprise_cleaning
-WHERE finish_date <= CURDATE() OR finish_date IS NULL
-ORDER BY area, Name;
+WHERE finish_date <= CURDATE() OR finish_date IS NULL;
